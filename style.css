@@ -1,0 +1,50 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #222831; color: #eeeeee; font-family: monospace; line-height: 1.7; }
+
+a { color: #eeeeee; text-decoration: none; }
+
+nav {
+	background: #393E46;
+	padding: 16px 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav span { font-size: 20px; font-weight: bold; }
+nav a { margin-left: 24px; font-size: 14px; opacity: 0.7; }
+nav a:hover { opacity: 1; }
+
+.hero { padding: 80px 32px; text-align: center; }
+.hero h1 { font-size: 48px; margin-bottom: 12px; }
+.hero p { opacity: 0.6; font-size: 16px; margin-bottom: 32px; }
+
+.badge {
+	display: inline-block;
+	background: #393E46;
+	padding: 6px 16px;
+	border-radius: 4px;
+	font-size: 13px;
+	margin: 4px;
+}
+
+section { max-width: 760px; margin: 0 auto; padding: 48px 32px; }
+
+h2 {
+	font-size: 22px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #393E46;
+	padding-bottom: 8px;
+}
+
+.card { background: #393E46; border-radius: 6px; padding: 20px 24px; margin-bottom: 16px; }
+.card h3 { font-size: 13px; opacity: 0.5; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+td, th { padding: 10px 12px; text-align: left; border-bottom: 1px solid #222831; }
+th { opacity: 0.5; font-weight: normal; }
+
+code { background: #222831; padding: 2px 8px; border-radius: 3px; font-size: 13px; }
+.tag { color: #00adb5; }
+
+footer { text-align: center; padding: 32px; opacity: 0.3; font-size: 13px; border-top: 1px solid #393E46; }

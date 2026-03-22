@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mojito CSS</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+	<span><img src="logo.png" alt="mojito" style="height:28px; vertical-align:middle; margin-right:8px;">mojito.css</span>
+	<div>
+		<a href="#usage">Usage</a>
+		<a href="#dynamic">Dynamic</a>
+		<a href="#static">Classes</a>
+	</div>
+</nav>
+
+<div class="hero">
+	<img src="logo.png" alt="mojito" style="height:72px; margin-bottom:16px;"><br>
+	<h1>Mojito CSS</h1>
+	<p>A tiny utility-class engine. No build step. Just drop in the script.</p>
+	<span class="badge">~2kb</span>
+	<span class="badge">no dependencies</span>
+	<span class="badge">vanilla js</span>
+</div>
+
+<section id="usage">
+	<h2>Usage</h2>
+	<div class="card">
+		<h3>1. Add the script</h3>
+		<code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+	</div>
+	<div class="card">
+		<h3>2. Use classes on any element</h3>
+		<code>&lt;div class="<span class="tag">moji-flex moji-p-16 moji-bg-grey</span>"&gt;...&lt;/div&gt;</code>
+	</div>
+	<div class="card">
+		<h3>How it works</h3>
+		Scans all <code>moji-</code> elements on <code>DOMContentLoaded</code> and injects inline styles. No stylesheet needed.
+	</div>
+</section>
+
+<section id="dynamic">
+	<h2>Dynamic Classes</h2>
+	<p style="opacity:0.6; margin-bottom:20px; font-size:14px;">
+		Any number works — <code>moji-p-4</code>, <code>moji-p-99</code>, <code>moji-fs-13</code> — no need to predefine.
+	</p>
+	<div class="card">
+		<table>
+			<tr><th>Class</th><th>CSS Output</th></tr>
+			<tr><td><code>moji-p-{n}</code></td><td>padding: npx</td></tr>
+			<tr><td><code>moji-m-{n}</code></td><td>margin: npx</td></tr>
+			<tr><td><code>moji-pt/pb/pl/pr-{n}</code></td><td>padding-top/bottom/left/right: npx</td></tr>
+			<tr><td><code>moji-mt/mb/ml/mr-{n}</code></td><td>margin-top/bottom/left/right: npx</td></tr>
+			<tr><td><code>moji-px-{n}</code></td><td>padding-left + padding-right: npx</td></tr>
+			<tr><td><code>moji-py-{n}</code></td><td>padding-top + padding-bottom: npx</td></tr>
+			<tr><td><code>moji-mx-{n}</code></td><td>margin-left + margin-right: npx</td></tr>
+			<tr><td><code>moji-my-{n}</code></td><td>margin-top + margin-bottom: npx</td></tr>
+			<tr><td><code>moji-fs-{n}</code></td><td>font-size: npx</td></tr>
+			<tr><td><code>moji-fw-{n}</code></td><td>font-weight: n</td></tr>
+			<tr><td><code>moji-br-{n}</code></td><td>border-radius: npx</td></tr>
+			<tr><td><code>moji-w-{n}</code></td><td>width: npx</td></tr>
+			<tr><td><code>moji-h-{n}</code></td><td>height: npx</td></tr>
+			<tr><td><code>moji-gap-{n}</code></td><td>gap: npx</td></tr>
+			<tr><td><code>moji-z-{n}</code></td><td>z-index: n</td></tr>
+			<tr><td><code>moji-op-{n}</code></td><td>opacity: n</td></tr>
+			<tr><td><code>moji-border-{n}</code></td><td>border-width: npx</td></tr>
+		</table>
+	</div>
+</section>
+
+<section id="static">
+	<h2>Static Classes</h2>
+
+	<div class="card">
+		<h3>Background</h3>
+		<table>
+			<tr><th>Class</th><th>CSS</th></tr>
+			<tr><td><code>moji-bg-red/blue/green/grey/white/black/yellow</code></td><td>background-color: …</td></tr>
+		</table>
+	</div>
+
+	<div class="card">
+		<h3>Text Color</h3>
+		<table>
+			<tr><th>Class</th><th>CSS</th></tr>
+			<tr><td><code>moji-red / blue / green</code></td><td>color: …</td></tr>
+			<tr><td><code>moji-text-red/blue/green/white/black/grey</code></td><td>color: …</td></tr>
+		</table>
+	</div>
+
+	<div class="card">
+		<h3>Display</h3>
+		<table>
+			<tr><th>Class</th><th>CSS</th></tr>
+			<tr><td><code>moji-flex / block / inline-block / grid / hidden</code></td><td>display: …</td></tr>
+		</table>
+	</div>
+
+	<div class="card">
+		<h3>Flexbox</h3>
+		<table>
+			<tr><th>Class</th><th>CSS</th></tr>
+			<tr><td><code>moji-justify-center/start/end/between/around</code></td><td>justify-content: …</td></tr>
+			<tr><td><code>moji-align-center/start/end</code></td><td>align-items: …</td></tr>
+			<tr><td><code>moji-flex-col / flex-row / flex-wrap</code></td><td>flex-direction / flex-wrap</td></tr>
+		</table>
+	</div>
+
+	<div class="card">
+		<h3>Typography</h3>
+		<table>
+			<tr><th>Class</th><th>CSS</th></tr>
+			<tr><td><code>moji-bold / italic / underline</code></td><td>font-weight / style / decoration</td></tr>
+			<tr><td><code>moji-uppercase / lowercase / capitalize</code></td><td>text-transform: …</td></tr>
+			<tr><td><code>moji-text-center / left / right</code></td><td>text-align: …</td></tr>
+		</table>
+	</div>
+
+	<div class="card">
+		<h3>Misc</h3>
+		<table>
+			<tr><th>Class</th><th>CSS</th></tr>
+			<tr><td><code>moji-w-full / h-full / w-half / h-half</code></td><td>width/height: 100% / 50%</td></tr>
+			<tr><td><code>moji-rounded / rounded-full</code></td><td>border-radius: 4px / 9999px</td></tr>
+			<tr><td><code>moji-shadow</code></td><td>box-shadow: 0 2px 8px rgba(0,0,0,0.2)</td></tr>
+			<tr><td><code>moji-cursor-pointer / overflow-hidden</code></td><td>cursor / overflow</td></tr>
+		</table>
+	</div>
+</section>
+
+<footer>mojito.css — keep it simple</footer>
+
+</body>
+</html>
