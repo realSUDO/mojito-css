@@ -6,11 +6,15 @@ A tiny utility-class engine for HTML. No build step, no stylesheet, just drop in
 
 ## Setup
 
+1. Download `script.js` and drop it in your project folder.
+
+2. Add it to your HTML before the closing `</body>` tag:
+
 ```html
 <script src="script.js"></script>
 ```
 
-Then use `moji-` classes on any element:
+3. Add `moji-` classes to any element:
 
 ```html
 <div class="moji-flex moji-p-16 moji-bg-grey moji-text-white">
@@ -18,7 +22,9 @@ Then use `moji-` classes on any element:
 </div>
 ```
 
-The script scans all elements with a `moji-` class on page load and injects inline styles automatically.
+That's it. No config, no build step, no stylesheet needed. The script runs on page load and injects styles directly on each element.
+
+> Classes are applied as inline styles, so they will override any existing CSS on that element.
 
 ---
 
