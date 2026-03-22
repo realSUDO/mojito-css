@@ -4,6 +4,8 @@
 
 A tiny utility-class engine for HTML. No build step, no stylesheet, just drop in the script and start using classes.
 
+📢 [Twitter Post](https://x.com/sudo_core/status/2035154667710423280?s=20) &nbsp;|&nbsp; 🎥 [Demo Video](https://drive.google.com/file/d/1QyO168nO2lPp6YSTwuH14ajfzy490BZ5/view?usp=sharing)
+
 ## Setup
 
 1. Download `script.js` and drop it in your project folder.
