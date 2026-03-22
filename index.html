@@ -26,6 +26,18 @@
 	<span class="badge">vanilla js</span>
 </div>
 
+<section id="playground" style="padding-bottom:0; padding-top:24px;">
+	<h2>Try Virgin Mojito !</h2>
+	<div class="card">
+		<h3>Enter classes</h3>
+		<input id="pg-input" type="text" placeholder="e.g. moji-bg-blue moji-p-16 moji-bold"
+			style="width:100%; padding:10px 12px; background:#222831; color:#eee; border:1px solid #555; border-radius:4px; font-family:monospace; font-size:14px; outline:none; margin-bottom:12px;" />
+		<div style="border:1px dashed #555; border-radius:4px; padding:12px; min-height:48px;">
+			<div id="pg-preview" style="display:inline-block; color:#eee;">Preview box</div>
+		</div>
+	</div>
+</section>
+
 <section id="usage">
 	<h2>Usage</h2>
 	<div class="card">
@@ -52,14 +64,22 @@
 			<tr><th>Class</th><th>CSS Output</th></tr>
 			<tr><td><code>moji-p-{n}</code></td><td>padding: npx</td></tr>
 			<tr><td><code>moji-m-{n}</code></td><td>margin: npx</td></tr>
-			<tr><td><code>moji-pt/pb/pl/pr-{n}</code></td><td>padding-top/bottom/left/right: npx</td></tr>
-			<tr><td><code>moji-mt/mb/ml/mr-{n}</code></td><td>margin-top/bottom/left/right: npx</td></tr>
+			<tr><td><code>moji-pt-{n}</code></td><td>padding-top: npx</td></tr>
+			<tr><td><code>moji-pb-{n}</code></td><td>padding-bottom: npx</td></tr>
+			<tr><td><code>moji-pl-{n}</code></td><td>padding-left: npx</td></tr>
+			<tr><td><code>moji-pr-{n}</code></td><td>padding-right: npx</td></tr>
+			<tr><td><code>moji-mt-{n}</code></td><td>margin-top: npx</td></tr>
+			<tr><td><code>moji-mb-{n}</code></td><td>margin-bottom: npx</td></tr>
+			<tr><td><code>moji-ml-{n}</code></td><td>margin-left: npx</td></tr>
+			<tr><td><code>moji-mr-{n}</code></td><td>margin-right: npx</td></tr>
 			<tr><td><code>moji-px-{n}</code></td><td>padding-left + padding-right: npx</td></tr>
 			<tr><td><code>moji-py-{n}</code></td><td>padding-top + padding-bottom: npx</td></tr>
 			<tr><td><code>moji-mx-{n}</code></td><td>margin-left + margin-right: npx</td></tr>
 			<tr><td><code>moji-my-{n}</code></td><td>margin-top + margin-bottom: npx</td></tr>
 			<tr><td><code>moji-fs-{n}</code></td><td>font-size: npx</td></tr>
 			<tr><td><code>moji-fw-{n}</code></td><td>font-weight: n</td></tr>
+			<tr><td><code>moji-lh-{n}</code></td><td>line-height: n</td></tr>
+			<tr><td><code>moji-ls-{n}</code></td><td>letter-spacing: npx</td></tr>
 			<tr><td><code>moji-br-{n}</code></td><td>border-radius: npx</td></tr>
 			<tr><td><code>moji-w-{n}</code></td><td>width: npx</td></tr>
 			<tr><td><code>moji-h-{n}</code></td><td>height: npx</td></tr>
@@ -95,7 +115,7 @@
 		<h3>Display</h3>
 		<table>
 			<tr><th>Class</th><th>CSS</th></tr>
-			<tr><td><code>moji-flex / block / inline-block / grid / hidden</code></td><td>display: …</td></tr>
+			<tr><td><code>moji-flex / block / inline / inline-block / grid / hidden</code></td><td>display: …</td></tr>
 		</table>
 	</div>
 
@@ -132,6 +152,9 @@
 </section>
 
 <footer>mojito.css — keep it simple</footer>
+
+<script src="script.js"></script>
+<script src="landingpage.js"></script>
 
 </body>
 </html>

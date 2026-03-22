@@ -121,7 +121,7 @@
 		return null;
 	}
 
-	function applyMojitoCss(ele) {
+	window.applyMojitoCss = function applyMojitoCss(ele) {
 		const classList = ele.className.split(" ");
 		let styleString = "";
 
